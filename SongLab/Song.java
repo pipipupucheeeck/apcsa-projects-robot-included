@@ -3,8 +3,8 @@ package SongLab;
 public class Song {
     private String artist, title, genre, topic;
     private int year, length;
-    private double obscene, danceability, loudness;
-    
+    private double obscene, danceability, loudness, shake;
+
     public Song(String artist, String title, int year, String genre, int length,
     double shake, double obscene, double danceability, double loudness, String topic)
     {
@@ -17,35 +17,39 @@ public class Song {
         this.danceability = danceability;
         this.loudness = loudness;
         this.topic = topic; 
+        this.shake = shake;
     }
-    public String getTopic();
+    public String getTopic()
     {
         return topic;
     }
-    public double getLoudness();
+    public double getLoudness()
     {
         return loudness;
     }
-    public double getDanceability();
-    {
-        return danceability;
-    }
 
-    public double getObscene();
+    public double getObscene()
     {
         return obscene;
     }
-    public double getDanceability();
+    public double getDanceability()
     {
         return danceability;
-}
-    public double getLoudness();
-    {
-        return loudness();
     }
-    public String getTopic();
+    public String getTitle()
     {
-        return topic;
+        return title;
     }
-
+    public int getYear()
+    {
+        return year;
+    }
+     public int getLength()
+    {
+        return length;
+    }
+    public double getShakeability()
+    {
+        return shake;
+    }
 }
